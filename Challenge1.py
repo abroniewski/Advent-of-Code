@@ -1,11 +1,11 @@
+# Day 1 Challenge
+# https://adventofcode.com/2021/day/1
 
-import txt
-
+# Part 1 - How many measurements are larger than the previous measurement?
 with open('AdventCode-1.txt', 'r') as f:
     reader = f.readlines()
     depth = list(reader)
 
-# Part 1 - How many measurements are larger than the previous measurement?
 count = 0
 # Why don't I get an overflow error with this range in the for index?
 #   it seems like I am going from 1 -> 2000, but my index should only
@@ -17,6 +17,7 @@ for index in range(1,len(depth)):
         count += 1
 print(f"The number of measurements larger than the previous is {count}")
 
+# -----------------
 # Part 2 - Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 
 # dropping count number by 1 as the first triple will increase the count by 1 even though there is no true
