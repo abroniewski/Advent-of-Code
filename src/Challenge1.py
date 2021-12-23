@@ -2,7 +2,7 @@
 # https://adventofcode.com/2021/day/1
 
 # Part 1 - How many measurements are larger than the previous measurement?
-with open('AdventCode-1.txt', 'r') as f:
+with open('../data/raw/AdventCode-1.txt', 'r') as f:
     reader = f.readlines()
     depth = list(reader)
 

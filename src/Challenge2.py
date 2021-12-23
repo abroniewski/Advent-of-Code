@@ -5,7 +5,7 @@
 # initialize a list called directions. When reading in the file, the lise will take in list of 
 # length 2 that includes the direction at index [0] and the movement amount at index [1]
 submarine_instructions = []
-with open('AdventCode-2.txt', 'r') as file:
+with open('../data/raw/AdventCode-2.txt', 'r') as file:
     for line in file:
         submarine_instructions.append(line.split())
 
